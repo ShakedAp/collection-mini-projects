@@ -1,5 +1,6 @@
 ## Electric Fields Simulation
 
+Date: 2022
 A small simulation for 2d electric fields created using python, with pygame as a graphics lirary.
 The simulation simulates single objects charged with 1[C] each (or -1[C]), and the distance between each dot is 1[m]. All of the math is calculated in pure python using the math library.
 
