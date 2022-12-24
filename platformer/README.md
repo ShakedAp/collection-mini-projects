@@ -3,6 +3,8 @@
 Date: 2021, Jan-Feb.  
 A simple baseline for a platformer game.  
 This program uses pygame as a graphics library, and pytmx as a map loader library. Also this project uses other simple python libraries.  
+The idea for this specific platformer is slashing ability, using the mouse. Pretty cool, in my opinion.  
+
 Foreword:  
 This is a discontinued project. I am pretty sure this was made in a few days in Jan 2021 (maybe when I had COVID-19).  
 THIS PROJECT CURRENTLY DOESN'T WORK.  
@@ -12,4 +14,4 @@ On another note though, I think the assets IMAGES are still in the folder, but n
 
 How to use:
 - WASD for movement.
-- Arrow to draw slash.
+- Left mouse button to draw slash.
