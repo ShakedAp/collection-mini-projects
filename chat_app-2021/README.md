@@ -6,11 +6,6 @@ A chat application creating in python using sockets, and tkinter.
 This was made for the Cyber class during 11th grade (in a day or two). Best suited for Windows.  
 Most of the code is documented.  
 
-How to use:
-- Run server program.
-- Run client program.
-- Use the GUI, it is pretty intuitive.
-
 ### Installation
 
 1. Install pacakge tkinter. This may vary from Linux to Windows.
