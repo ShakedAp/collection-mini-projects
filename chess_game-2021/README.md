@@ -17,5 +17,5 @@ Most of the features are implemented, except for *castling* (which is pretty imp
 
 ### Screenshots
 ![example1](./screenshots/example1.png)
-![example2](./screenshots/example1.png)
-![example3](./screenshots/example1.png)
+![example2](./screenshots/example2.png)
+![example3](./screenshots/example3.png)
