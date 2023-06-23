@@ -143,6 +143,7 @@ while running:
                 display_change_made = True
             elif event.key == pygame.K_w:
                 show_search = True
+                current_display = 0
             elif event.key == pygame.K_RETURN or event.key == pygame.K_SPACE:
                 current_display += 1
                 if current_display >= len(DISPLAY_OPTIONS):
@@ -172,19 +173,20 @@ while running:
             astar.remove_wall(pos[0], pos[1])
             display_change_made = True
 
+    if display_change_made and show_search:
+        show_search = False
+        astar_gen = astar.a_star_generator()
+
     if show_search and show_search_timer >= show_search_timer_limit:
         show_search_timer = 0
 
-        if display_change_made:
+        path, info, done = next(astar_gen)
+        
+        if done:
             show_search = False
-            gen = astar.a_star_generator()
-        else:
-            path, info, done = next(astar_gen)
-            if done:
-                show_search = False
-                gen = astar.a_star_generator()
+            astar_gen = astar.a_star_generator()
 
-            draw_existing_board(screen, astar.board, astar.start_pos, astar.end_pos, path_result=(path, info))
+        draw_existing_board(screen, astar.board, astar.start_pos, astar.end_pos, path_result=(path, info))
     else:
         show_search_timer += time.time() - last_time
         last_time = time.time()
