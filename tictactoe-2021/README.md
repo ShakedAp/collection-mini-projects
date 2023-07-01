@@ -1,4 +1,4 @@
-## Tic-Tac-Toe with Minimax
+# Tic-Tac-Toe with Minimax
 
 A Tic Tac Toe game implemented in Python using Pygame. The game also has built in algorithm to play the best move, implemented using Minimax.
 This was created during my CS class during high school, when I was bored. The first version was in java using the terminal to display the board.  

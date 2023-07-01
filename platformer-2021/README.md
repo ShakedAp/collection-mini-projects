@@ -1,4 +1,4 @@
-## Platformer Game
+# Platformer Game
 
 A simple baseline for a platformer game.  
 This program uses pygame as a graphics library, and pytmx as a map loader library. Also this project uses other simple python libraries.  
