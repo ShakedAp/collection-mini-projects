@@ -95,7 +95,7 @@ class Player:
     def crouch(self):
         self.is_crouching = True
         self.rect = pygame.Rect(self.rect.x, self.rect.y, 12, 12)
-        self.friction /= d10
+        self.friction /= 10
         self.max_velocity += 2
 
     def un_crouch(self):
