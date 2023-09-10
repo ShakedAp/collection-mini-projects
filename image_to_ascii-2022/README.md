@@ -13,3 +13,5 @@ A tool to convert images to ascii characters that look like the image, coded in 
 ## Screenshots
 Example image of Tyler Durden from the movie Fight Club turned into ascii (original in /images):  
 ![Screenshot](./screenshots/ascii-image-1.png)
+And another nice image I found in the internet:
+![Screenshot](./screenshots/welivewelovewelie.png)

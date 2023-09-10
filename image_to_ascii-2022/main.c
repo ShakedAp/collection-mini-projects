@@ -21,13 +21,13 @@ int main(int argc, char *argv[])
     if (argc == 3)
         scale = atof(argv[2]);
 
-    const char *lightAscii = " .,:;ox%#@";
+    const char *lightAscii = ".,:;ox%#@"; // change light characters as needed. For example add space
     const long int lightAsciiLen = strlen(lightAscii);
     int width, height, channels;
     
     // Load the image from the disk
     unsigned char *img = stbi_load(argv[1], &width, &height, &channels, 0);
-    printf("Image dimenstions: %dpx by %dpx.\n", width, height);
+    printf("Image dimenstions: %d   px by %dpx.\n", width, height);
     if (img == NULL)
     {
         printf("Could not load \"%s\".\n", argv[1]);
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
                 pixels++;
             
             float avg = (R + G + B) / 3.0f;
-            int index = round((avg / 255.0f) * lightAsciiLen);
+            int index = floor((avg / 255.0f) * lightAsciiLen);
             putchar(lightAscii[index]);
             putchar(lightAscii[index]);
         }
